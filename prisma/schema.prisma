@@ -18,3 +18,11 @@ model User{
   createdAt DateTime      @default(now())
   @@map("user")
 }
+
+model NotifyGn{
+  id        String       @id @default(uuid())
+  notification      String
+
+  createdAt DateTime      @default(now())
+  @@map("notify_gn")
+}

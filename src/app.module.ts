@@ -3,10 +3,11 @@ import { ConfigModule } from '@nestjs/config';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 import { UserModule } from './user/user.module';
-import { DialogflowModule } from './dialogflow/dialogflow.module';
+//import { DialogflowModule } from './dialogflow/dialogflow.module';
+import { NotifyModule } from './notify/notify.module';
 
 @Module({
-  imports: [ConfigModule.forRoot(), UserModule, DialogflowModule],
+  imports: [ConfigModule.forRoot(), UserModule, NotifyModule],
   controllers: [AppController],
   providers: [AppService],
 })
